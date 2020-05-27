@@ -3,8 +3,9 @@ const settings = require('../settings');
 
 module.exports = testEnv => {
   const dbName = settings.db + (testEnv ? '-test' : '');
+  const databaseUrl = process.env.MONGODB_URI || `mongodb://localhost/${dbName}`
 
-  mongoose.connect('mongodb://localhost/' + dbName, {
+  mongoose.connect(databaseUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,

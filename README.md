@@ -1,6 +1,12 @@
 # Randomuser.me-Node
 [![Build Status](https://travis-ci.org/RandomAPI/Randomuser.me-Node.svg?branch=master)](https://travis-ci.org/RandomAPI/Randomuser.me-Node)
 [![codecov](https://codecov.io/gh/RandomAPI/Randomuser.me-Node/branch/master/graph/badge.svg)](https://codecov.io/gh/RandomAPI/Randomuser.me-Node)
+### About This Fork for Voluntarily.
+This fork of Randomuser.me user generator has two modifications
+1. increased the limits on user generation
+2. add a docker file
+
+This allows us to run the service in a CI action that can initialise a test database. 
 
 ### About
 This is the source code that powers the randomuser.me User Generator.
